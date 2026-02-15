@@ -1,0 +1,1025 @@
+{
+  "asOf": "15 February 2026",
+  "destinations": [
+    {
+      "name": "Kuala Lumpur International Airport (WMKK)",
+      "lat": 2.74558,
+      "lng": 101.709999,
+      "type": "hub"
+    },
+    {
+      "name": "Adelaide Airport (YPAD)",
+      "lat": -34.947512,
+      "lng": 138.533393,
+      "type": "international"
+    },
+    {
+      "name": "Darwin International Airport (YPDN)",
+      "lat": -12.41497,
+      "lng": 130.88185,
+      "type": "international"
+    },
+    {
+      "name": "Melbourne Airport (YMML)",
+      "lat": -37.670732,
+      "lng": 144.837898,
+      "type": "international"
+    },
+    {
+      "name": "Perth Airport (YPPH)",
+      "lat": -31.94029998779297,
+      "lng": 115.96700286865234,
+      "type": "international"
+    },
+    {
+      "name": "Sydney Airport (YSSY)",
+      "lat": -33.946098,
+      "lng": 151.177002,
+      "type": "international"
+    },
+    {
+      "name": "Shahjalal International Airport (VGHS)",
+      "lat": 23.843347,
+      "lng": 90.397783,
+      "type": "international"
+    },
+    {
+      "name": "Brunei International Airport (WBSB)",
+      "lat": 4.9442,
+      "lng": 114.928001,
+      "type": "international"
+    },
+    {
+      "name": "Techo International Airport (VDTI)",
+      "lat": 11.362917,
+      "lng": 104.916611,
+      "type": "hub"
+    },
+    {
+      "name": "Siem Reap-Angkor International Airport (VDSA)",
+      "lat": 13.36974,
+      "lng": 104.223831,
+      "type": "international"
+    },
+    {
+      "name": "Sihanoukville International Airport (VDSV)",
+      "lat": 10.570557,
+      "lng": 103.632067,
+      "type": "international"
+    },
+    {
+      "name": "Beijing Daxing International Airport (ZBAD)",
+      "lat": 39.501289,
+      "lng": 116.413967,
+      "type": "international"
+    },
+    {
+      "name": "Changsha Huanghua International Airport (ZGHA)",
+      "lat": 28.189199,
+      "lng": 113.220001,
+      "type": "international"
+    },
+    {
+      "name": "Chengdu Tianfu International Airport (ZUTF)",
+      "lat": 30.31252,
+      "lng": 104.441284,
+      "type": "international"
+    },
+    {
+      "name": "Chongqing Jiangbei International Airport (ZUCK)",
+      "lat": 29.712254,
+      "lng": 106.651895,
+      "type": "international"
+    },
+    {
+      "name": "Guangzhou Baiyun International Airport (ZGGG)",
+      "lat": 23.392401,
+      "lng": 113.299004,
+      "type": "international"
+    },
+    {
+      "name": "Guilin Liangjiang International Airport (ZGKL)",
+      "lat": 25.219828,
+      "lng": 110.039553,
+      "type": "international"
+    },
+    {
+      "name": "Hangzhou Xiaoshan International Airport (ZSHC)",
+      "lat": 30.23609,
+      "lng": 120.428865,
+      "type": "international"
+    },
+    {
+      "name": "Kunming Changshui International Airport (ZPPP)",
+      "lat": 25.110313,
+      "lng": 102.936743,
+      "type": "international"
+    },
+    {
+      "name": "Nanning Wuxu International Airport (ZGNN)",
+      "lat": 22.598071,
+      "lng": 108.181922,
+      "type": "international"
+    },
+    {
+      "name": "Ningbo Lishe International Airport (ZSNB)",
+      "lat": 29.82670021057129,
+      "lng": 121.46199798583984,
+      "type": "international"
+    },
+    {
+      "name": "Quanzhou Jinjiang Airport (ZSQZ)",
+      "lat": 24.795855,
+      "lng": 118.588599,
+      "type": "international"
+    },
+    {
+      "name": "Sanya Phoenix International Airport (ZJSY)",
+      "lat": 18.3029,
+      "lng": 109.412003,
+      "type": "international"
+    },
+    {
+      "name": "Shanghai Pudong International Airport (ZSPD)",
+      "lat": 31.1434,
+      "lng": 121.805,
+      "type": "international"
+    },
+    {
+      "name": "Jieyang Chaoshan International Airport (ZGOW)",
+      "lat": 23.552,
+      "lng": 116.5033,
+      "type": "international"
+    },
+    {
+      "name": "Shenyang Taoxian International Airport (ZYTX)",
+      "lat": 41.6398,
+      "lng": 123.483668,
+      "type": "international"
+    },
+    {
+      "name": "Shenzhen Bao'an International Airport (ZGSZ)",
+      "lat": 22.639474,
+      "lng": 113.803262,
+      "type": "international"
+    },
+    {
+      "name": "Tianjin Binhai International Airport (ZBTJ)",
+      "lat": 39.124401092499994,
+      "lng": 117.346000671,
+      "type": "international"
+    },
+    {
+      "name": "Wuhan Tianhe International Airport (ZHHH)",
+      "lat": 30.774798,
+      "lng": 114.213723,
+      "type": "international"
+    },
+    {
+      "name": "Xi'an Xianyang International Airport (ZLXY)",
+      "lat": 34.447102,
+      "lng": 108.751999,
+      "type": "international"
+    },
+    {
+      "name": "Zagreb International Airport (LDZA)",
+      "lat": 45.742901,
+      "lng": 16.0688,
+      "type": "international"
+    },
+    {
+      "name": "Tbilisi International Airport (UGTB)",
+      "lat": 41.669201,
+      "lng": 44.9547,
+      "type": "international"
+    },
+    {
+      "name": "Hong Kong International Airport (VHHH)",
+      "lat": 22.31184,
+      "lng": 113.914862,
+      "type": "international"
+    },
+    {
+      "name": "Sardar Vallabhbhai Patel International Airport (VAAH)",
+      "lat": 23.0772,
+      "lng": 72.634697,
+      "type": "international"
+    },
+    {
+      "name": "Sri Guru Ram Dass Jee International Airport (VIAR)",
+      "lat": 31.7096,
+      "lng": 74.797302,
+      "type": "international"
+    },
+    {
+      "name": "Kempegowda International Airport (VOBL)",
+      "lat": 13.1979,
+      "lng": 77.706299,
+      "type": "hub"
+    },
+    {
+      "name": "Chennai International Airport (VOMM)",
+      "lat": 12.990005,
+      "lng": 80.169296,
+      "type": "international"
+    },
+    {
+      "name": "Indira Gandhi International Airport (VIDP)",
+      "lat": 28.55563,
+      "lng": 77.09519,
+      "type": "international"
+    },
+    {
+      "name": "Goa International Airport (VOGO)",
+      "lat": 15.380062,
+      "lng": 73.833328,
+      "type": "international"
+    },
+    {
+      "name": "Lokpriya Gopinath Bordoloi International Airport (VEGT)",
+      "lat": 26.106654,
+      "lng": 91.585226,
+      "type": "international"
+    },
+    {
+      "name": "Rajiv Gandhi International Airport (VOHS)",
+      "lat": 17.231318,
+      "lng": 78.429855,
+      "type": "international"
+    },
+    {
+      "name": "Jaipur Airport (VIJP)",
+      "lat": 26.8242,
+      "lng": 75.812202,
+      "type": "international"
+    },
+    {
+      "name": "Cochin International Airport (VOCI)",
+      "lat": 10.151047,
+      "lng": 76.400838,
+      "type": "international"
+    },
+    {
+      "name": "Netaji Subhash Chandra Bose International Airport (VECC)",
+      "lat": 22.654012,
+      "lng": 88.44765,
+      "type": "hub"
+    },
+    {
+      "name": "Kozhikode International Airport (VOCL)",
+      "lat": 11.135996,
+      "lng": 75.955152,
+      "type": "international"
+    },
+    {
+      "name": "Chaudhary Charan Singh Airport (VILK)",
+      "lat": 26.760599,
+      "lng": 80.889297,
+      "type": "international"
+    },
+    {
+      "name": "Trivandrum International Airport (VOTV)",
+      "lat": 8.481889,
+      "lng": 76.920029,
+      "type": "international"
+    },
+    {
+      "name": "Tiruchirapalli Airport (VOTR)",
+      "lat": 10.762915,
+      "lng": 78.717741,
+      "type": "international"
+    },
+    {
+      "name": "Lal Bahadur Shastri Airport (VEBN)",
+      "lat": 25.452171,
+      "lng": 82.862549,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Aji Muhammad Sulaiman Airport (WALL)",
+      "lat": -1.268342,
+      "lng": 116.89452,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Iskandar Muda International Airport (WITT)",
+      "lat": 5.525087,
+      "lng": 95.41997,
+      "type": "international"
+    },
+    {
+      "name": "Syamsudin Noor International Airport (WAOO)",
+      "lat": -3.440112,
+      "lng": 114.761209,
+      "type": "international"
+    },
+    {
+      "name": "Hang Nadim International Airport (WIDD)",
+      "lat": 1.12103,
+      "lng": 104.119003,
+      "type": "international"
+    },
+    {
+      "name": "Kalimarau Airport (WAQT)",
+      "lat": 2.14776,
+      "lng": 117.430705,
+      "type": "international"
+    },
+    {
+      "name": "Ngurah Rai International Airport (WADD)",
+      "lat": -8.748409,
+      "lng": 115.167123,
+      "type": "hub"
+    },
+    {
+      "name": "Soekarno–Hatta International Airport (WIII)",
+      "lat": -6.12557,
+      "lng": 106.655998,
+      "type": "hub"
+    },
+    {
+      "name": "Komodo Airport (WATO)",
+      "lat": -8.480694,
+      "lng": 119.888306,
+      "type": "international"
+    },
+    {
+      "name": "Lombok International Airport (WADL)",
+      "lat": -8.759962,
+      "lng": 116.278169,
+      "type": "international"
+    },
+    {
+      "name": "Kertajati International Airport (WICA)",
+      "lat": -6.647384,
+      "lng": 108.165561,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Hasanuddin International Airport (WAAA)",
+      "lat": -5.075539,
+      "lng": 119.553702,
+      "type": "international"
+    },
+    {
+      "name": "Sam Ratulangi International Airport (WAMM)",
+      "lat": 1.548591,
+      "lng": 124.92625,
+      "type": "international"
+    },
+    {
+      "name": "Kualanamu International Airport (WIMM)",
+      "lat": 3.637847,
+      "lng": 98.870566,
+      "type": "hub"
+    },
+    {
+      "name": "Minangkabau International Airport (WIEE)",
+      "lat": -0.875,
+      "lng": 100.353,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Mahmud Badaruddin II International Airport (WIPP)",
+      "lat": -2.897653,
+      "lng": 104.698147,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Syarif Kasim II International Airport (WIBB)",
+      "lat": 0.458647,
+      "lng": 101.444321,
+      "type": "international"
+    },
+    {
+      "name": "Supadio International Airport (WIOO)",
+      "lat": -0.153023,
+      "lng": 109.404708,
+      "type": "international"
+    },
+    {
+      "name": "Silangit International Airport (WIMN)",
+      "lat": 2.25973,
+      "lng": 98.991898,
+      "type": "international"
+    },
+    {
+      "name": "Domine Eduard Osok Airport (WASS)",
+      "lat": -0.894,
+      "lng": 131.287,
+      "type": "international"
+    },
+    {
+      "name": "Juanda International Airport (WARR)",
+      "lat": -7.37983,
+      "lng": 112.787003,
+      "type": "hub"
+    },
+    {
+      "name": "H.A.S. Hanandjoeddin International Airport (WIKT)",
+      "lat": -2.745,
+      "lng": 106.569,
+      "type": "international"
+    },
+    {
+      "name": "Juwata Airport (WAQQ)",
+      "lat": 3.326,
+      "lng": 117.566,
+      "type": "international"
+    },
+    {
+      "name": "Yogyakarta International Airport (WAHI)",
+      "lat": -7.905338,
+      "lng": 110.057264,
+      "type": "international"
+    },
+    {
+      "name": "Fukuoka Airport (RJFF)",
+      "lat": 33.585899353027344,
+      "lng": 130.4510040283203,
+      "type": "international"
+    },
+    {
+      "name": "Chubu Centrair International Airport (RJGG)",
+      "lat": 34.858398,
+      "lng": 136.804993,
+      "type": "international"
+    },
+    {
+      "name": "Naha Airport (ROAH)",
+      "lat": 26.192437,
+      "lng": 127.639804,
+      "type": "international"
+    },
+    {
+      "name": "Kansai International Airport (RJBB)",
+      "lat": 34.427299,
+      "lng": 135.244003,
+      "type": "international"
+    },
+    {
+      "name": "New Chitose Airport (RJCC)",
+      "lat": 42.774753,
+      "lng": 141.690414,
+      "type": "international"
+    },
+    {
+      "name": "Sendai Airport (RJSS)",
+      "lat": 38.139702,
+      "lng": 140.917007,
+      "type": "international"
+    },
+    {
+      "name": "Haneda Airport (RJTT)",
+      "lat": 35.549678,
+      "lng": 139.786958,
+      "type": "international"
+    },
+    {
+      "name": "Narita International Airport (RJAA)",
+      "lat": 35.76858,
+      "lng": 140.388714,
+      "type": "international"
+    },
+    {
+      "name": "Almaty International Airport (UAAA)",
+      "lat": 43.354267,
+      "lng": 77.042828,
+      "type": "international"
+    },
+    {
+      "name": "Jomo Kenyatta International Airport (HKJK)",
+      "lat": -1.31923997402,
+      "lng": 36.9277992249,
+      "type": "international"
+    },
+    {
+      "name": "Luang Prabang International Airport (VLLB)",
+      "lat": 19.904273,
+      "lng": 102.167191,
+      "type": "international"
+    },
+    {
+      "name": "Wattay International Airport (VLVT)",
+      "lat": 17.985052,
+      "lng": 102.566692,
+      "type": "international"
+    },
+    {
+      "name": "Macau International Airport (VMMC)",
+      "lat": 22.149599,
+      "lng": 113.592003,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Abdul Halim Airport (WMKA)",
+      "lat": 6.189670085906982,
+      "lng": 100.39800262451172,
+      "type": "international"
+    },
+    {
+      "name": "Bintulu Airport (WBGB)",
+      "lat": 3.12385010719,
+      "lng": 113.019996643,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Azlan Shah Airport (WMKI)",
+      "lat": 4.56733,
+      "lng": 101.091643,
+      "type": "international"
+    },
+    {
+      "name": "Senai International Airport (WMKJ)",
+      "lat": 1.64131,
+      "lng": 103.669998,
+      "type": "hub"
+    },
+    {
+      "name": "Sultan Ismail Petra Airport (WMKC)",
+      "lat": 6.1668500900268555,
+      "lng": 102.29299926757812,
+      "type": "international"
+    },
+    {
+      "name": "Kota Kinabalu International Airport (WBKK)",
+      "lat": 5.932743,
+      "lng": 116.049324,
+      "type": "hub"
+    },
+    {
+      "name": "Sultan Abdul Aziz Shah Airport (WMSA)",
+      "lat": 3.13058,
+      "lng": 101.549004,
+      "type": "international"
+    },
+    {
+      "name": "Sultan Mahmud Airport (WMKN)",
+      "lat": 5.3826398849487305,
+      "lng": 103.10299682617188,
+      "type": "international"
+    },
+    {
+      "name": "Kuching International Airport (WBGG)",
+      "lat": 1.487364,
+      "lng": 110.352859,
+      "type": "hub"
+    },
+    {
+      "name": "Labuan Airport (WBKL)",
+      "lat": 5.301667,
+      "lng": 115.248333,
+      "type": "international"
+    },
+    {
+      "name": "Langkawi International Airport (WMKL)",
+      "lat": 6.329730033874512,
+      "lng": 99.72869873046875,
+      "type": "hub"
+    },
+    {
+      "name": "Miri Airport (WBGR)",
+      "lat": 4.32201,
+      "lng": 113.987,
+      "type": "international"
+    },
+    {
+      "name": "Penang International Airport (WMKP)",
+      "lat": 5.296303,
+      "lng": 100.276185,
+      "type": "hub"
+    },
+    {
+      "name": "Sandakan Airport (WBKS)",
+      "lat": 5.900899887084961,
+      "lng": 118.05899810791016,
+      "type": "international"
+    },
+    {
+      "name": "Sibu Airport (WBGS)",
+      "lat": 2.2616,
+      "lng": 111.985001,
+      "type": "international"
+    },
+    {
+      "name": "Tawau Airport (WBKW)",
+      "lat": 4.31338,
+      "lng": 118.12152,
+      "type": "international"
+    },
+    {
+      "name": "Velana International Airport (VRMM)",
+      "lat": 4.19183,
+      "lng": 73.529099,
+      "type": "international"
+    },
+    {
+      "name": "Yangon International Airport (VYYY)",
+      "lat": 16.907300949099998,
+      "lng": 96.1332015991,
+      "type": "international"
+    },
+    {
+      "name": "Jinnah International Airport (OPKC)",
+      "lat": 24.9065,
+      "lng": 67.160797,
+      "type": "international"
+    },
+    {
+      "name": "Bacolod-Silay Airport (RPVB)",
+      "lat": 10.776237,
+      "lng": 123.018879,
+      "type": "international"
+    },
+    {
+      "name": "Laguindingan International Airport (RPMY)",
+      "lat": 8.612203,
+      "lng": 124.456496,
+      "type": "international"
+    },
+    {
+      "name": "Godofredo P. Ramos Airport (RPVE)",
+      "lat": 11.9245,
+      "lng": 121.954002,
+      "type": "international"
+    },
+    {
+      "name": "Mactan–Cebu International Airport (RPVM)",
+      "lat": 10.309261,
+      "lng": 123.97974,
+      "type": "hub"
+    },
+    {
+      "name": "Clark International Airport (RPLC)",
+      "lat": 15.186,
+      "lng": 120.559998,
+      "type": "hub"
+    },
+    {
+      "name": "Francisco Bangoy International Airport (RPMD)",
+      "lat": 7.12552,
+      "lng": 125.646004,
+      "type": "international"
+    },
+    {
+      "name": "Iloilo International Airport (RPVI)",
+      "lat": 10.833017,
+      "lng": 122.493358,
+      "type": "international"
+    },
+    {
+      "name": "Kalibo International Airport (RPVK)",
+      "lat": 11.6794,
+      "lng": 122.375999,
+      "type": "international"
+    },
+    {
+      "name": "Ninoy Aquino International Airport (RPLL)",
+      "lat": 14.5086,
+      "lng": 121.019997,
+      "type": "hub"
+    },
+    {
+      "name": "Puerto Princesa International Airport (RPVP)",
+      "lat": 9.742044,
+      "lng": 118.75911,
+      "type": "international"
+    },
+    {
+      "name": "Roxas Airport (RPVR)",
+      "lat": 11.597700119018555,
+      "lng": 122.75199890136719,
+      "type": "international"
+    },
+    {
+      "name": "Daniel Z. Romualdez Airport (RPVA)",
+      "lat": 11.227761,
+      "lng": 125.027783,
+      "type": "international"
+    },
+    {
+      "name": "Bohol–Panglao International Airport (RPSP)",
+      "lat": 9.573045,
+      "lng": 123.770143,
+      "type": "international"
+    },
+    {
+      "name": "King Abdulaziz International Airport (OEJN)",
+      "lat": 21.6796,
+      "lng": 39.156502,
+      "type": "international"
+    },
+    {
+      "name": "Prince Mohammad bin Abdulaziz International Airport (OEMA)",
+      "lat": 24.5534,
+      "lng": 39.705101,
+      "type": "international"
+    },
+    {
+      "name": "King Khalid International Airport (OERK)",
+      "lat": 24.9576,
+      "lng": 46.698799,
+      "type": "international"
+    },
+    {
+      "name": "Singapore Changi Airport (WSSS)",
+      "lat": 1.35019,
+      "lng": 103.994003,
+      "type": "international"
+    },
+    {
+      "name": "Gimhae International Airport (RKPK)",
+      "lat": 35.179501,
+      "lng": 128.938004,
+      "type": "international"
+    },
+    {
+      "name": "Incheon International Airport (RKSI)",
+      "lat": 37.469101,
+      "lng": 126.450996,
+      "type": "international"
+    },
+    {
+      "name": "Bandaranaike International Airport (VCBI)",
+      "lat": 7.180759906768799,
+      "lng": 79.88410186767578,
+      "type": "international"
+    },
+    {
+      "name": "Kaohsiung International Airport (RCKH)",
+      "lat": 22.577101,
+      "lng": 120.349998,
+      "type": "international"
+    },
+    {
+      "name": "Taoyuan International Airport (RCTP)",
+      "lat": 25.0777,
+      "lng": 121.233002,
+      "type": "international"
+    },
+    {
+      "name": "Suvarnabhumi Airport (VTBS)",
+      "lat": 13.6811,
+      "lng": 100.747002,
+      "type": "hub"
+    },
+    {
+      "name": "Don Mueang International Airport (VTBD)",
+      "lat": 13.9126,
+      "lng": 100.607002,
+      "type": "hub"
+    },
+    {
+      "name": "Buriram Airport (VTUO)",
+      "lat": 15.2295,
+      "lng": 103.252998,
+      "type": "international"
+    },
+    {
+      "name": "Chiang Mai International Airport (VTCC)",
+      "lat": 18.766799926799997,
+      "lng": 98.962600708,
+      "type": "hub"
+    },
+    {
+      "name": "Chiang Rai International Airport (VTCT)",
+      "lat": 19.952299,
+      "lng": 99.882896,
+      "type": "hub"
+    },
+    {
+      "name": "Chumphon Airport (VTSE)",
+      "lat": 10.7112,
+      "lng": 99.361702,
+      "type": "international"
+    },
+    {
+      "name": "Hat Yai International Airport (VTSS)",
+      "lat": 6.93321,
+      "lng": 100.392998,
+      "type": "hub"
+    },
+    {
+      "name": "Hua Hin Airport (VTPH)",
+      "lat": 12.6361999512,
+      "lng": 99.951499939,
+      "type": "international"
+    },
+    {
+      "name": "Khon Kaen Airport (VTUK)",
+      "lat": 16.466600418099997,
+      "lng": 102.783996582,
+      "type": "international"
+    },
+    {
+      "name": "Krabi International Airport (VTSG)",
+      "lat": 8.09912014008,
+      "lng": 98.9861984253,
+      "type": "hub"
+    },
+    {
+      "name": "Loei Airport (VTUL)",
+      "lat": 17.43910026550293,
+      "lng": 101.72200012207031,
+      "type": "international"
+    },
+    {
+      "name": "Nakhon Phanom Airport (VTUW)",
+      "lat": 17.383801,
+      "lng": 104.642998,
+      "type": "international"
+    },
+    {
+      "name": "Nakhon Si Thammarat Airport (VTSF)",
+      "lat": 8.539620399475098,
+      "lng": 99.9447021484375,
+      "type": "international"
+    },
+    {
+      "name": "Nan Airport (VTCN)",
+      "lat": 18.807899475097656,
+      "lng": 100.78299713134766,
+      "type": "international"
+    },
+    {
+      "name": "Narathiwat Airport (VTSC)",
+      "lat": 6.5199198722839355,
+      "lng": 101.74299621582031,
+      "type": "international"
+    },
+    {
+      "name": "U-Tapao International Airport (VTBU)",
+      "lat": 12.6799,
+      "lng": 101.004997,
+      "type": "international"
+    },
+    {
+      "name": "Phitsanulok Airport (VTPP)",
+      "lat": 16.7829,
+      "lng": 100.278999,
+      "type": "international"
+    },
+    {
+      "name": "Phuket International Airport (VTSP)",
+      "lat": 8.113257,
+      "lng": 98.3174,
+      "type": "hub"
+    },
+    {
+      "name": "Ranong Airport (VTSR)",
+      "lat": 9.77762,
+      "lng": 98.585503,
+      "type": "international"
+    },
+    {
+      "name": "Roi Et Airport (VTUV)",
+      "lat": 16.1168,
+      "lng": 103.774002,
+      "type": "international"
+    },
+    {
+      "name": "Sakon Nakhon Airport (VTUI)",
+      "lat": 17.195100784301758,
+      "lng": 104.11900329589844,
+      "type": "international"
+    },
+    {
+      "name": "Surat Thani Airport (VTSB)",
+      "lat": 9.13259983063,
+      "lng": 99.135597229,
+      "type": "international"
+    },
+    {
+      "name": "Trang Airport (VTST)",
+      "lat": 7.50874,
+      "lng": 99.6166,
+      "type": "international"
+    },
+    {
+      "name": "Ubon Ratchathani Airport (VTUU)",
+      "lat": 15.2512998581,
+      "lng": 104.870002747,
+      "type": "international"
+    },
+    {
+      "name": "Udon Thani Airport (VTUD)",
+      "lat": 17.386186,
+      "lng": 102.788577,
+      "type": "international"
+    },
+    {
+      "name": "Sabiha Gökçen International Airport (LTFJ)",
+      "lat": 40.898602,
+      "lng": 29.3092,
+      "type": "international"
+    },
+    {
+      "name": "London Gatwick Airport (EGKK)",
+      "lat": 51.148744,
+      "lng": -0.185739,
+      "type": "international"
+    },
+    {
+      "name": "Bahrain International Airport (OBBI)",
+      "lat": 26.267295,
+      "lng": 50.63764,
+      "type": "international"
+    },
+    {
+      "name": "Islam Karimov Tashkent International Airport (UZTT)",
+      "lat": 41.257,
+      "lng": 69.281,
+      "type": "international"
+    },
+    {
+      "name": "Lien Khuong Airport (VVDL)",
+      "lat": 11.750556,
+      "lng": 108.366997,
+      "type": "international"
+    },
+    {
+      "name": "Da Nang International Airport (VVDN)",
+      "lat": 16.0439,
+      "lng": 108.198997,
+      "type": "international"
+    },
+    {
+      "name": "Noi Bai International Airport (VVNB)",
+      "lat": 21.221201,
+      "lng": 105.806999,
+      "type": "international"
+    },
+    {
+      "name": "Tan Son Nhat International Airport (VVTS)",
+      "lat": 10.8188,
+      "lng": 106.652,
+      "type": "international"
+    },
+    {
+      "name": "Cam Ranh International Airport (VVCR)",
+      "lat": 11.9982,
+      "lng": 109.219002,
+      "type": "international"
+    },
+    {
+      "name": "Phú Quốc International Airport (VVPQ)",
+      "lat": 10.169783,
+      "lng": 103.99353,
+      "type": "international"
+    },
+    {
+      "name": "Jenderal Ahmad Yani International Airport (WAHS)",
+      "lat": -6.975,
+      "lng": 110.375,
+      "type": "international"
+    },
+    {
+      "name": "Silangit Airport (WIMN)",
+      "lat": 2.25973,
+      "lng": 98.991898,
+      "type": "international"
+    },
+    {
+      "name": "Harbin Taiping International Airport (HRB)",
+      "lat": 45.623402,
+      "lng": 126.25,
+      "type": "international"
+    },
+    {
+      "name": "Radin Inten II International Airport (WILL)",
+      "lat": -5.246803,
+      "lng": 105.182531,
+      "type": "international"
+    },
+    {
+      "name": "Tribhuvan International Airport (VNKT)",
+      "lat": 27.6966,
+      "lng": 85.3591,
+      "type": "international"
+    },
+    {
+      "name": "Gautam Buddha International Airport (VNBW)",
+      "lat": 27.504591,
+      "lng": 83.414618,
+      "type": "international"
+    },
+    {
+      "name": "Lampang Airport (VTCL)",
+      "lat": 18.27090072631836,
+      "lng": 99.50420379638672,
+      "type": "international"
+    },
+    {
+      "name": "Gaya Airport (VEGY)",
+      "lat": 24.744301,
+      "lng": 84.951202,
+      "type": "international"
+    },
+    {
+      "name": "Cat Bi International Airport (VVCI)",
+      "lat": 20.817428,
+      "lng": 106.724315,
+      "type": "international"
+    }
+  ]
+}

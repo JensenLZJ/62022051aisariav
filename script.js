@@ -94,15 +94,21 @@ function initSwiper() {
             disableOnInteraction: false,
         },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.strategy-swiper .swiper-pagination',
             clickable: true,
+            renderBullet: function (index, className) {
+                const num = String(index + 1).padStart(2, '0');
+                return '<span class="' + className + '">' + num + '</span>';
+            },
         },
         loop: true,
         effect: 'fade',
         fadeEffect: {
             crossFade: true
         },
-        speed: 1000,
+        speed: 800,
+        longSwipes: false,
+        threshold: 5,
     });
 }
 

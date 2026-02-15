@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - vAirAsia Route Map | Virtual Airline</title>
+    <meta name="description" content="vAirAsia virtual airline destinations and route map. Flight sim only—VATSIM, IVAO. Not real flights.">
+    <link rel="icon" type="image/svg+xml" href="../asset/brand/logo_nobg_A.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../pages.css">
+</head>
+<body>
+    <header class="navbar scrolled">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="../" class="logo-link" aria-label="vAirAsia">
+                        <img src="../asset/brand/logo_nobg_vairasia.svg" alt="vAirAsia" class="logo-img">
+                        <span class="logo-tagline">virtual airline</span>
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Travel Info <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="../destination/">Destinations</a>
+                            <a href="../livemap/">Live Map</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Experience <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="../fleet/">Fleet</a>
+                            <a href="../experience/">360° Cockpit & Cabin</a>
+                            <a href="../allstars/">Allstars</a>
+                        </div>
+                    </div>
+                    <a href="https://allstars.vairasia.com" class="btn-allstar" target="_blank" rel="noopener">Allstar Portal</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero page-hero-dest">
+            <div class="container">
+                <h1 class="page-hero-title">Our <span class="text-red">Destinations</span></h1>
+            </div>
+        </section>
+        <section class="dest-section section-pad">
+            <div class="container container-full-until-md">
+                <div class="dest-layout">
+            <div class="dest-map-wrap">
+                <div id="dest-map"></div>
+                <div class="dest-legend">
+                    <span class="dest-legend-item"><span class="dest-legend-dot hub"></span> Operation Hubs</span>
+                    <span class="dest-legend-item"><span class="dest-legend-dot intl"></span> Destinations</span>
+                </div>
+                <div class="dest-date">As of <span id="dest-date">30 September 2025</span></div>
+            </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <img src="../asset/brand/logo_nobg_virtualcapitala.svg" alt="Virtual Capital A" class="footer-logo footer-logo-vca">
+                        <img src="../asset/brand/logo_nobg_vairasia.svg" alt="vAirAsia" class="footer-logo">
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/airasiava" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/8uvx783kJj" aria-label="Discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="../fleet/">Fleet</a></li>
+                        <li><a href="../destination/">Destinations</a></li>
+                        <li><a href="../livemap/">Live Map</a></li>
+                        <li><a href="../allstars/">Allstars</a></li>
+                        <li><a href="../experience/">Experience</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Partners</h4>
+                    <ul>
+                        <li><a href="https://vatsim.net" target="_blank" rel="noopener">VATSIM</a></li>
+                        <li><a href="https://vamsys.io" target="_blank" rel="noopener">vAMSYS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>vAirAsia is a virtual airline for flight simulation purposes only.<br>We are not affiliated with any AirAsia Group or real-world bodies. No real-world flight services are offered here. All trademarks and logos belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../script.js"></script>
+    <script>
+(function() {
+    var DESTINATIONS_JSON = '../asset/data/destinations.json';
+    var fallbackDestinations = [
+        { name: 'Kuala Lumpur (WMKK)', lat: 2.7456, lng: 101.7099, type: 'hub' },
+        { name: 'Bangkok (VTBS)', lat: 13.6900, lng: 100.7501, type: 'hub' },
+        { name: 'Singapore (WSSS)', lat: 1.3644, lng: 103.9915, type: 'hub' },
+        { name: 'Ahmedabad (VAAH)', lat: 23.0225, lng: 72.5714, type: 'international' },
+        { name: 'Bali (WADD)', lat: -8.7482, lng: 115.1672, type: 'international' },
+        { name: 'Bengaluru (VOBL)', lat: 13.1989, lng: 77.7068, type: 'international' },
+        { name: 'Buri Ram (VTUO)', lat: 15.2294, lng: 103.2530, type: 'domestic' },
+        { name: 'Changsha (ZGHA)', lat: 28.1892, lng: 113.2196, type: 'international' },
+        { name: 'Chengdu (ZUUU)', lat: 30.5785, lng: 103.9469, type: 'international' },
+        { name: 'Chennai (VOMM)', lat: 12.9941, lng: 80.1709, type: 'international' },
+        { name: 'Chiang Mai (VTCC)', lat: 18.7668, lng: 98.9626, type: 'domestic' },
+        { name: 'Chiang Rai (VTCT)', lat: 19.9520, lng: 99.8829, type: 'domestic' },
+        { name: 'Chitose (RJCC)', lat: 42.7752, lng: 141.6923, type: 'international' },
+        { name: 'Ho Chi Minh City (VVNB)', lat: 10.8188, lng: 106.6519, type: 'international' },
+        { name: 'Hong Kong (VHHH)', lat: 22.3080, lng: 113.9185, type: 'international' },
+        { name: 'Jakarta (WIII)', lat: -6.1256, lng: 106.6559, type: 'international' },
+        { name: 'Manila (RPLL)', lat: 14.5087, lng: 121.0194, type: 'international' },
+        { name: 'Phuket (VTSP)', lat: 8.1132, lng: 98.3169, type: 'domestic' },
+        { name: 'Penang (WMKP)', lat: 5.2972, lng: 100.2769, type: 'domestic' },
+        { name: 'Taipei (RCTP)', lat: 25.0797, lng: 121.2342, type: 'international' }
+    ];
+    var fallbackDate = '30 September 2025';
+
+    var map = L.map('dest-map').setView([8, 108], 4);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; CARTO'
+    }).addTo(map);
+
+    var markers = [];
+    var listEl = document.getElementById('dest-list');
+    var searchEl = document.getElementById('dest-search');
+    var dateEl = document.getElementById('dest-date');
+    var sourceEl = document.getElementById('dest-data-source');
+    var currentDestinations = [];
+
+    function markerColor(t) {
+        if (t === 'hub') return '#ff0000';
+        if (t === 'international') return '#666';
+        return '#333';
+    }
+
+    function renderList(destinations, filter) {
+        if (!listEl) return;
+        var q = (filter || '').toLowerCase();
+        var html = '';
+        destinations.forEach(function(d) {
+            if (q && d.name.toLowerCase().indexOf(q) === -1) return;
+            html += '<a href="#" class="dest-list-item" data-name="' + escapeHtml(d.name) + '">' + escapeHtml(d.name) + '</a>';
+        });
+        listEl.innerHTML = html || '<p style="padding:12px;color:#666;">No destinations match.</p>';
+        listEl.querySelectorAll('.dest-list-item').forEach(function(a) {
+            a.addEventListener('click', function(e) {
+                e.preventDefault();
+                var d = destinations.find(function(x) { return x.name === a.dataset.name; });
+                if (d) {
+                    map.setView([d.lat, d.lng], 8);
+                    markers.forEach(function(m) {
+                        if (m.dest.name === d.name) m.openPopup();
+                    });
+                }
+            });
+        });
+    }
+
+    function escapeHtml(s) {
+        var div = document.createElement('div');
+        div.textContent = s;
+        return div.innerHTML;
+    }
+
+    function applyDestinations(destinations, asOf) {
+        markers.forEach(function(m) { map.removeLayer(m); });
+        markers = [];
+
+        destinations.forEach(function(d) {
+            var m = L.circleMarker([d.lat, d.lng], {
+                radius: d.type === 'hub' ? 10 : 6,
+                fillColor: markerColor(d.type),
+                color: '#fff',
+                weight: 1.5,
+                opacity: 1,
+                fillOpacity: 0.9
+            }).addTo(map).bindPopup('<strong>' + escapeHtml(d.name) + '</strong><br>' + (d.type === 'hub' ? 'Operation Hub' : d.type === 'international' ? 'Destinations' : 'Domestic'));
+            m.dest = d;
+            markers.push(m);
+        });
+
+        currentDestinations = destinations;
+        renderList(destinations, searchEl ? searchEl.value : '');
+        if (dateEl) dateEl.textContent = asOf || fallbackDate;
+    }
+
+    function runWithData(destinations, asOf, fromJson) {
+        if (sourceEl) {
+            sourceEl.style.display = 'block';
+            sourceEl.textContent = fromJson ? 'Loaded from asset/data/destinations.json (match your vAMSYS vAirAsia routes).' : 'Using built-in sample. To match vAMSYS vAirAsia, update asset/data/destinations.json — see asset/data/README.md.';
+        }
+        applyDestinations(destinations, asOf);
+    }
+
+    fetch(DESTINATIONS_JSON)
+        .then(function(r) {
+            if (!r.ok) throw new Error('Not found');
+            return r.json();
+        })
+        .then(function(data) {
+            var list = data.destinations || data;
+            if (!Array.isArray(list) || list.length === 0) throw new Error('No destinations');
+            runWithData(list, data.asOf, true);
+        })
+        .catch(function() {
+            runWithData(fallbackDestinations, fallbackDate, false);
+        });
+
+    if (searchEl) searchEl.addEventListener('input', function() {
+        renderList(currentDestinations, this.value);
+    });
+})();
+    </script>
+</body>
+</html>

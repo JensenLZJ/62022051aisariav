@@ -1,0 +1,6 @@
+# vAirAsia - Virtual Airline (flight sim only; not affiliated with AirAsia Group)
+# Update the host and Sitemap URL below if your site is not at https://vairasia.com
+User-agent: *
+Allow: /
+
+Sitemap: https://vairasia.com/sitemap.xml
