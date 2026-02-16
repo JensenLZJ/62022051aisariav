@@ -203,6 +203,64 @@ window.vAirAsia = {
 };
 
 /* ============================================
+   Logo Image Protection
+   ============================================ */
+function initLogoProtection() {
+    // Select all logo images
+    const logoImages = document.querySelectorAll('.logo-img, .footer-logo, .strategy-logo, .hero-cta-logo, .logo-allstars');
+    
+    logoImages.forEach(function(img) {
+        // Prevent right-click context menu
+        img.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Prevent drag start
+        img.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Prevent common keyboard shortcuts (Ctrl+S, Ctrl+P, etc.) when focused on logo
+        img.addEventListener('keydown', function(e) {
+            // Prevent Ctrl+S (Save)
+            if (e.ctrlKey && e.key === 's') {
+                e.preventDefault();
+                return false;
+            }
+            // Prevent Ctrl+P (Print)
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                return false;
+            }
+            // Prevent F12 (DevTools)
+            if (e.key === 'F12') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Add additional protection: disable image saving via browser menu
+        img.setAttribute('oncontextmenu', 'return false;');
+        img.setAttribute('ondragstart', 'return false;');
+        img.setAttribute('onselectstart', 'return false;');
+    });
+    
+    // Also prevent right-click on logo container links
+    const logoLinks = document.querySelectorAll('.logo-link');
+    logoLinks.forEach(function(link) {
+        link.addEventListener('contextmenu', function(e) {
+            // Only prevent if clicking on the image, not the link itself
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+                return false;
+            }
+        });
+    });
+}
+
+/* ============================================
    Initialization
    ============================================ */
 document.addEventListener('DOMContentLoaded', function() {
@@ -223,6 +281,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize smooth scrolling
     initSmoothScroll();
+    
+    // Initialize logo protection
+    initLogoProtection();
     
     // Handle window resize for dropdowns
     let resizeTimer;

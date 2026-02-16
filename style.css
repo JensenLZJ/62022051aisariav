@@ -74,6 +74,17 @@ body {
     width: auto;
     display: block;
     object-fit: contain;
+    /* Prevent image saving */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: auto;
 }
 
 .logo-tagline {
@@ -241,6 +252,17 @@ body {
     width: auto;
     vertical-align: middle;
     margin-left: 0.4em;
+    /* Prevent image saving */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: auto;
 }
 
 /* ============================================
@@ -329,6 +351,17 @@ body {
     object-fit: contain;
     margin-bottom: 24px;
     display: block;
+    /* Prevent image saving */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: auto;
 }
 
 .strategy-left p {
@@ -634,6 +667,17 @@ body {
     max-width: 200px;
     object-fit: contain;
     display: block;
+    /* Prevent image saving */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: auto;
 }
 
 .footer-logo-vca {
