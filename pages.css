@@ -33,7 +33,7 @@
 
 /* Fleet page */
 .fleet-cards {
-    background: url('asset/images/bg-01.webp') center/cover no-repeat;
+    background: url('https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/images/bg-01.webp') center/cover no-repeat;
     color: #fff;
 }
 
@@ -380,7 +380,7 @@
 .page-hero-dest {
     padding: 40px 0 32px;
     background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url('asset/brand/wallpaper_bg_allstars.svg') center/cover no-repeat;
+        url('https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/wallpaper_bg_allstars.svg') center/cover no-repeat;
     color: #fff;
 }
 .page-hero-dest .page-hero-title,
@@ -391,7 +391,7 @@
 .page-hero-fleet {
     padding: 40px 0 32px;
     background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url('asset/brand/wallpaper_bg_allstars.svg') center/cover no-repeat;
+        url('https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/wallpaper_bg_allstars.svg') center/cover no-repeat;
     color: #fff;
 }
 .page-hero-fleet .page-hero-title,
@@ -649,7 +649,7 @@
 .allstars-hero {
     padding: 80px 0 60px;
     text-align: center;
-    background: var(--secondary-color) url('asset/brand/wallpaper_bg_allstars.svg') center / cover no-repeat;
+    background: var(--secondary-color) url('https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/wallpaper_bg_allstars.svg') center / cover no-repeat;
     color: #fff;
 }
 
