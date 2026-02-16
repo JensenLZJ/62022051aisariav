@@ -206,8 +206,8 @@ window.vAirAsia = {
    Logo Image Protection
    ============================================ */
 function initLogoProtection() {
-    // Select all logo images
-    const logoImages = document.querySelectorAll('.logo-img, .footer-logo, .strategy-logo, .hero-cta-logo, .logo-allstars');
+    // Select all logo images, videos, and protected media
+    const logoImages = document.querySelectorAll('.logo-img, .footer-logo, .strategy-logo, .hero-cta-logo, .logo-allstars, .intro-cap-a-gif, .vision-video');
     
     // Function to prevent all image saving methods
     function preventImageSave(e) {
@@ -260,30 +260,32 @@ function initLogoProtection() {
         link.setAttribute('ondragstart', 'return false;');
     });
     
-    // Also protect logo container divs
-    const logoContainers = document.querySelectorAll('.logo, .footer-brand');
+    // Also protect logo container divs and video containers
+    const logoContainers = document.querySelectorAll('.logo, .footer-brand, .vision-video-container');
     logoContainers.forEach(function(container) {
         container.addEventListener('contextmenu', function(e) {
-            // If clicking on an image inside, prevent it
-            if (e.target.tagName === 'IMG' || e.target.closest('img')) {
+            // If clicking on an image or video inside, prevent it
+            if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO' || e.target.closest('img') || e.target.closest('video')) {
                 preventImageSave(e);
             }
         }, true);
     });
     
-    // Global protection: prevent right-click on any image with logo in src
+    // Global protection: prevent right-click on any image or video with logo in src
     document.addEventListener('contextmenu', function(e) {
         const target = e.target;
-        if (target.tagName === 'IMG') {
+        if (target.tagName === 'IMG' || target.tagName === 'VIDEO') {
             const src = target.src || target.getAttribute('src') || '';
             const className = target.className || '';
-            // Check if it's a logo image
+            // Check if it's a logo image, protected image, or video
             if (src.includes('logo') || 
                 className.includes('logo-img') || 
                 className.includes('footer-logo') || 
                 className.includes('strategy-logo') || 
                 className.includes('hero-cta-logo') ||
-                className.includes('logo-allstars')) {
+                className.includes('logo-allstars') ||
+                className.includes('intro-cap-a-gif') ||
+                className.includes('vision-video')) {
                 preventImageSave(e);
             }
         }
