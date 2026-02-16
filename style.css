@@ -63,6 +63,11 @@ body {
     line-height: 1.2;
     color: var(--primary-color);
     text-decoration: none;
+    /* Prevent right-click on logo link */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .navbar.scrolled .logo-link {

@@ -209,55 +209,85 @@ function initLogoProtection() {
     // Select all logo images
     const logoImages = document.querySelectorAll('.logo-img, .footer-logo, .strategy-logo, .hero-cta-logo, .logo-allstars');
     
+    // Function to prevent all image saving methods
+    function preventImageSave(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        return false;
+    }
+    
     logoImages.forEach(function(img) {
-        // Prevent right-click context menu
-        img.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-            return false;
-        });
+        // Prevent right-click context menu (use capture phase to catch early)
+        img.addEventListener('contextmenu', preventImageSave, true);
+        img.addEventListener('contextmenu', preventImageSave, false);
         
         // Prevent drag start
-        img.addEventListener('dragstart', function(e) {
-            e.preventDefault();
-            return false;
-        });
+        img.addEventListener('dragstart', preventImageSave, true);
+        img.addEventListener('dragstart', preventImageSave, false);
         
-        // Prevent common keyboard shortcuts (Ctrl+S, Ctrl+P, etc.) when focused on logo
-        img.addEventListener('keydown', function(e) {
-            // Prevent Ctrl+S (Save)
-            if (e.ctrlKey && e.key === 's') {
-                e.preventDefault();
-                return false;
-            }
-            // Prevent Ctrl+P (Print)
-            if (e.ctrlKey && e.key === 'p') {
-                e.preventDefault();
-                return false;
-            }
-            // Prevent F12 (DevTools)
-            if (e.key === 'F12') {
-                e.preventDefault();
-                return false;
-            }
-        });
+        // Prevent select start
+        img.addEventListener('selectstart', preventImageSave, true);
+        img.addEventListener('selectstart', preventImageSave, false);
         
-        // Add additional protection: disable image saving via browser menu
+        // Prevent mouse down that might trigger save
+        img.addEventListener('mousedown', function(e) {
+            if (e.button === 2) { // Right mouse button
+                preventImageSave(e);
+            }
+        }, true);
+        
+        // Add inline event handlers for additional protection
         img.setAttribute('oncontextmenu', 'return false;');
         img.setAttribute('ondragstart', 'return false;');
         img.setAttribute('onselectstart', 'return false;');
+        img.setAttribute('onmousedown', 'if(event.button==2) return false;');
+        
+        // Make image non-draggable via attribute
+        img.draggable = false;
     });
     
-    // Also prevent right-click on logo container links
+    // Prevent right-click on logo container links (entire area)
     const logoLinks = document.querySelectorAll('.logo-link');
     logoLinks.forEach(function(link) {
         link.addEventListener('contextmenu', function(e) {
-            // Only prevent if clicking on the image, not the link itself
-            if (e.target.tagName === 'IMG') {
-                e.preventDefault();
-                return false;
-            }
-        });
+            // Prevent right-click anywhere in the logo link area
+            preventImageSave(e);
+        }, true);
+        
+        link.addEventListener('dragstart', preventImageSave, true);
+        link.setAttribute('oncontextmenu', 'return false;');
+        link.setAttribute('ondragstart', 'return false;');
     });
+    
+    // Also protect logo container divs
+    const logoContainers = document.querySelectorAll('.logo, .footer-brand');
+    logoContainers.forEach(function(container) {
+        container.addEventListener('contextmenu', function(e) {
+            // If clicking on an image inside, prevent it
+            if (e.target.tagName === 'IMG' || e.target.closest('img')) {
+                preventImageSave(e);
+            }
+        }, true);
+    });
+    
+    // Global protection: prevent right-click on any image with logo in src
+    document.addEventListener('contextmenu', function(e) {
+        const target = e.target;
+        if (target.tagName === 'IMG') {
+            const src = target.src || target.getAttribute('src') || '';
+            const className = target.className || '';
+            // Check if it's a logo image
+            if (src.includes('logo') || 
+                className.includes('logo-img') || 
+                className.includes('footer-logo') || 
+                className.includes('strategy-logo') || 
+                className.includes('hero-cta-logo') ||
+                className.includes('logo-allstars')) {
+                preventImageSave(e);
+            }
+        }
+    }, true);
 }
 
 /* ============================================

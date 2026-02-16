@@ -12,14 +12,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/pages.css">
+    
+    <!-- Logo Protection Script (runs immediately) -->
+    <script>
+        (function() {
+            document.addEventListener('contextmenu', function(e) {
+                var target = e.target;
+                if (target.tagName === 'IMG') {
+                    var src = target.src || target.getAttribute('src') || '';
+                    var className = target.className || '';
+                    if (src.includes('logo') || 
+                        className.includes('logo-img') || 
+                        className.includes('footer-logo') || 
+                        className.includes('strategy-logo') || 
+                        className.includes('hero-cta-logo') ||
+                        className.includes('logo-allstars')) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    }
+                }
+            }, true);
+        })();
+    </script>
 </head>
 <body>
     <header class="navbar scrolled">
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <a href="../" class="logo-link" aria-label="vAirAsia">
-                        <img src="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/logo_nobg_vairasia.svg" alt="vAirAsia" class="logo-img">
+                    <a href="../" class="logo-link" aria-label="vAirAsia" oncontextmenu="return false;" ondragstart="return false;">
+                        <img src="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/logo_nobg_vairasia.svg" alt="vAirAsia" class="logo-img" oncontextmenu="return false;" ondragstart="return false;" draggable="false">
                         <span class="logo-tagline">virtual airline</span>
                     </a>
                 </div>
@@ -183,8 +206,8 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <div class="footer-brand">
-                        <img src="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/logo_nobg_virtualcapitala.svg" alt="Virtual Capital A" class="footer-logo footer-logo-vca">
-                        <img src="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/logo_nobg_vairasia.svg" alt="vAirAsia" class="footer-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/logo_nobg_virtualcapitala.svg" alt="Virtual Capital A" class="footer-logo footer-logo-vca" oncontextmenu="return false;" ondragstart="return false;" draggable="false">
+                        <img src="https://cdn.jsdelivr.net/gh/JensenLZJ/62022051aisariav@main/asset/brand/logo_nobg_vairasia.svg" alt="vAirAsia" class="footer-logo" oncontextmenu="return false;" ondragstart="return false;" draggable="false">
                     </div>
                     <div class="social-links">
                         <a href="https://www.instagram.com/airasiava" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
